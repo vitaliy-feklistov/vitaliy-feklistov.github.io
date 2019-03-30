@@ -109,17 +109,19 @@ float: left;
 }
 
 
-
 .content {
 	border-radius: 8px;
 	margin-left: 336px;
 	box-shadow: 0 0 16px rgba(39,39,57,0.06);
 	background-color: #fff;
-	padding: 113px 145px 113px 52px; 
+	padding: 113px 145px 0px 52px; 
+	&.cont-resume {
+		margin-top: 30px;
+	}
 	p {
 		font-size: 1em;
 		line-height: 1.625em;
-		margin-bottom: 13px;
+		margin-bottom: 13px; 
 	}
 	h2 {
 		padding-left: 42px;
@@ -158,7 +160,7 @@ float: left;
 			.left {
 				width: 215px;
 				padding-right: 40px;
-				a {
+				a, .a {
 					transition: all .2s;
 					font-weight: 500;
 					font-size: 1em;

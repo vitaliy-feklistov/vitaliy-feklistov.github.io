@@ -253,7 +253,11 @@ h4 {
   margin-left: 336px;
   box-shadow: 0 0 16px rgba(39, 39, 57, 0.06);
   background-color: #fff;
-  padding: 113px 145px 113px 52px;
+  padding: 113px 145px 0px 52px;
+}
+
+.content.cont-resume {
+  margin-top: 30px;
 }
 
 .content p {
@@ -313,7 +317,7 @@ h4 {
   padding-right: 40px;
 }
 
-.content .portfolio .elem .left a {
+.content .portfolio .elem .left a, .content .portfolio .elem .left .a {
   transition: all .2s;
   font-weight: 500;
   font-size: 1em;
