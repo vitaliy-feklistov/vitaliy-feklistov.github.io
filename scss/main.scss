@@ -1,7 +1,7 @@
 //@import "vars";
 @import "reset";
 @import "fonts";
-//@import "libs";
+
 
 
 .clear {width: 100%; overflow: hidden;}
@@ -68,12 +68,12 @@ h4 {
 
 .profile {
 	background-color: #fff;
-    padding: 55px 20px 50px;
+	padding: 55px 20px 50px;
 	text-align: center;
 	width: 266px;
 	box-shadow: 0 0 16px rgba(39,39,57,0.06);
 	border-radius: 8px;
-float: left;
+	float: left;
 	.w-img {
 		overflow: hidden;
 		img {
@@ -272,7 +272,7 @@ ol li {
 		&::after {
 			opacity: 0;
 		}
-		 .left a {
+		.left a {
 			border-bottom-color: #272739;
 		}
 	}
@@ -359,4 +359,49 @@ ol li {
 	.content {
 		padding-left: 15px; padding-right: 15px;
 	}
+}
+
+
+
+
+@media all and (min-width: 1200px) {
+
+.tooltip-img {
+	display: inline-block;
+	position: relative;
+	font-weight: inherit;
+	.mark {
+		display: inline-block;
+		position: relative;
+	font-weight: inherit;
+		&::after {
+			content: '';
+			position: absolute;bottom: 3px; left: 0;right: 0; z-index: 2;
+			height: 1px;
+			border-bottom: 1px dashed #000;
+		}
+	}
+	.tooltip-content {
+		background-color: #f9f9f9;
+		padding: 15px;
+		border-radius: 2px;
+		position: absolute;
+		top: 25px;
+		left: 0;
+		z-index: 99;
+		width: 300px;
+		max-height: 400px;
+		display: inline-block;
+		img {width: 100%; height: auto;}
+	}
+}
+
+}
+.tooltip-content {
+	display: none;
+}
+
+@import "../libs/magnific-popup.scss";
+.mfp-zoom-out-cur, .mfp-zoom-out-cur .mfp-image-holder .mfp-close {
+	cursor: pointer;
 }
