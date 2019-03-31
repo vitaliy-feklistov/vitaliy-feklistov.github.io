@@ -546,6 +546,7 @@ ol li::before {
     border-bottom: 1px dashed #000;
   }
   .tooltip-img .tooltip-content {
+    box-shadow: 0 0 16px rgba(39, 39, 57, 0.1);
     background-color: #f9f9f9;
     padding: 15px;
     border-radius: 2px;
@@ -553,8 +554,7 @@ ol li::before {
     top: 25px;
     left: 0;
     z-index: 99;
-    width: 300px;
-    max-height: 400px;
+    width: 250px;
     display: inline-block;
   }
   .tooltip-img .tooltip-content img {
